@@ -1,0 +1,5 @@
+body { font-family: Arial; background:#f5f5f5; }
+nav a { margin:10px; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.card { background:white; padding:15px; }
+#chatbot { position:fixed; bottom:20px; right:20px; background:white; padding:10px; }

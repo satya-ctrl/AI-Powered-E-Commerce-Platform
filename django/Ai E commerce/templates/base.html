@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI E-Commerce</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/cart/">Cart</a>
+  <a href="/login/">Login</a>
+</nav>
+
+{% block content %}{% endblock %}
+
+<div id="chatbot">
+  <input id="chatInput" placeholder="Ask me..." />
+  <button onclick="sendMessage()">Send</button>
+  <p id="chatReply"></p>
+</div>
+
+<script src="{% static 'js/cart.js' %}"></script>
+<script src="{% static 'js/chatbot.js' %}"></script>
+</body>
+</html>
